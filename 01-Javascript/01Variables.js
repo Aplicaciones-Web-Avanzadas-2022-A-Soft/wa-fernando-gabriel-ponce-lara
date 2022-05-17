@@ -77,7 +77,7 @@ if (-1){
     console.log("un negativo es falso");
 }
 
-if ("0"){
+if (0){
     console.log("un cero es verdader");
 }else{
     console.log("un cero es falso");
@@ -135,6 +135,43 @@ console.log(edadGabro);
 edadGabro=edadGabro+5;
 console.log(edadFercho);
 console.log(edadGabro);
+
+//VARIABLES POR REGERENCIA
+
+console.log("valores por referencia");
+
+let notas = {
+    total : 10
+};
+
+
+let notasSegundoBimestre = notas;
+
+notasSegundoBimestre.total=notasSegundoBimestre.total + 1 ;
+console.log(notas);
+console.log(notasSegundoBimestre);
+
+// las dos cambian de valor por son el mismo objeto
+notas.total = notas.total +1 ;
+console.log(notas);
+console.log(notasSegundoBimestre);
+
+
+//// como clonar objetos
+console.log("----------------");
+// si no se clona tambien al trabajar con este valor cambia el valor de la referencia
+let notasTercerBimestre= Object.assign({},notas);
+// object.assight([],arreglo);
+
+notasTercerBimestre.total=notasTercerBimestre.total +1 ;
+console.log('notas',notas);
+console.log('notasSegundoBimestre',notasSegundoBimestre);
+console.log('notasTercerBimestre',notasTercerBimestre);
+
+//////////////////////////////////////////////////
+
+
+
 
 
 

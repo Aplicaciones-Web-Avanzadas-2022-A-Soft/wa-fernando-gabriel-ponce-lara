@@ -1,28 +1,11 @@
-const fs = require('fs');   // file system
-                            // / es una libreria // require pide libreria
-
-
-///06 ejemplo.txt //// hola
-console.log('Inicio');
-
-
-
-
-//----------
-fs.writeFile (
-    './06ArchivoPath.txt',
-    'contenidoArchivo',
-    (errorEscritura)=>{
-
-    }
-);
-
-
-
 //1)    leer archivo 06ejemplo.txt. luego imprimir en consonola
 //2)    Despues del paso uni leer archivo 01-variable.js, luego imprimir en consola
 
-//----------
+
+
+
+//Solucion
+
 
 fs.readFile(
     './06Ejemplo.txt',
@@ -49,6 +32,6 @@ fs.readFile(
 );
 
 
+///3) Crear un nuevo archivo llamado 06-nuevoarchivo.txt con el contenido de los otros dos archivos
 
-/////programacion asincrona   , el fs.readFile se ejecuta asincronamente
-/// se debe intentar evitar el callback hell
+

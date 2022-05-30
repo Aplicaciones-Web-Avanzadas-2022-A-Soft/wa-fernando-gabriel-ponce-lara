@@ -5,13 +5,13 @@ const fs = require('fs');   // file system
 ///06 ejemplo.txt //// hola
 console.log('Inicio');
 
-
-
+/*
+*/
 
 //----------
 fs.writeFile (
     './06ArchivoPath.txt',
-    'contenidoArchivo',
+    'contenidoArchivo papu',
     (errorEscritura)=>{
 
     }
@@ -39,6 +39,24 @@ fs.readFile(
                     if (errorLectura2) {
                         console.error(errorLectura2);
                         throw new Error('Error leyendo el 2do archivo');
+
+/////
+                    }else{
+                        const nuevoContenido = contenidoPrimerArchivo + contenidoSegundoArchivo;
+                        fs.writeFile(
+                            './06-nuevo-archivo.txt',
+                            nuevoContenido,
+                            (errorEscritura)=>{
+                                if(errorEscritura){
+                                    console.error(errorEscritura);
+                                    throw new Error('Error escribiendo nuevo archivo');
+                                }else{
+                                    console.log('Completado');
+                                }
+                            }
+                        );
+/////
+
 
 
                     }

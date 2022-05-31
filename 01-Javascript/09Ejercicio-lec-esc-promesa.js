@@ -101,7 +101,7 @@ function promesaLectura(Archivo){
 
 
 /////////////////////////// ASYNC AWAIT
-    
+
 
 
 

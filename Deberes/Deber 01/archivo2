@@ -1,0 +1,4 @@
+Encadenamiento
+Una necesidad común es el ejecutar dos o más operaciones asíncronas seguidas,
+donde cada operación posterior se inicia cuando la operación previa tiene éxito,
+con el resultado del paso previo. Logramos esto creando una cadena de objetos promises.

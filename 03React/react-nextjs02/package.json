@@ -1,13 +1,10 @@
 {
   "private": true,
   "scripts": {
-    "hola-mundo": "dir && echo 'Hola'",
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "type-check": "tsc",
-    "hola-mundo": "dir && echo 'HOLA'",
-    "export": "next build && next export"
+    "type-check": "tsc"
   },
   "dependencies": {
     "next": "latest",

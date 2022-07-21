@@ -3,7 +3,7 @@ import  { NextApiRequest, NextApiResponse } from 'next'
 import {conn} from "../../../utils/database";
 
 export default async (req:NextApiRequest,res:NextApiResponse) => {
-const {method,body}=req;
+const {method,body,query}=req;
 /*if(method ==="GET"){
 
     res.status(200).json('getting escuelas')
@@ -38,6 +38,7 @@ const {method,body}=req;
             }catch (error){
                 console.log(error)
             }
+            ///no se porque aki va put
 
 
         default:

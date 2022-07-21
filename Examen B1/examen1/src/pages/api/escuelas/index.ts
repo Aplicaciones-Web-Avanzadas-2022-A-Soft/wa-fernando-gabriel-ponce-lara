@@ -1,9 +1,9 @@
 import  { NextApiRequest, NextApiResponse } from 'next'
-
+// este achivo cuando se entra a http://localhost:3000/api/escuelas
 import {conn} from "../../../utils/database";
 
 export default async (req:NextApiRequest,res:NextApiResponse) => {
-const {method,body,query}=req;
+const {method,body}=req;
 /*if(method ==="GET"){
 
     res.status(200).json('getting escuelas')
@@ -30,7 +30,7 @@ const {method,body,query}=req;
             try {
                 const {id_escuela,institucion,tipo_de_institucion,direccion,ranking_}=body;
 
-                const query_="insert into escuela(id_escuela,institucion,tipo_de_institucion,direccion,ranking_) values($1,$2,$3,$4,$5) returning *"
+                const query_="insert into escuela (id_escuela,institucion,tipo_de_institucion,direccion,ranking_) values($1,$2,$3,$4,$5) returning *"
                 const values=[id_escuela,institucion,tipo_de_institucion,direccion,ranking_];
                 const response=await conn.query(query_,values)
 

@@ -2,7 +2,8 @@ import {NextApiRequest,NextApiResponse} from "next";
 
 export default (req:NextApiRequest,res:NextApiResponse)=>{
 
-        const {method} = req;
+        const {method,query} = req;
+        console.log(query)
 
         switch (method){
                 case "GET":

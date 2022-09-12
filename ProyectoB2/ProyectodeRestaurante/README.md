@@ -9,7 +9,7 @@ en el directorio del projecto se puede ejecutar:
 ### `npm start`
 
 Corre en el modo de desarrollador  mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Abrir [http://localhost:3000](http://localhost:3000) para verlo en el buscador.
 
 la pagina recarga si se hace cambios edits.\
 You will also see any lint errors in the console.
